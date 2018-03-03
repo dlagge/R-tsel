@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V3</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+		$(function() {
+	
+			$("#back").hide();
+			$("#div2, #div3, #div4, #div5, #div6, #div7").hide();
+
+			$("#back").click(function() {
+				location.reload();
+			});
+			$("#bu1").click(function() {
+				$("#div1").hide();
+				$("#div2").show();
+				$("#back").show();
+				
+			});
+			$("#bu2").click(function() {
+				$("#div1").hide();
+				$("#div3").show();
+				$("#back").show();
+				
+			});
+			$("#bu3").click(function() {
+				$("#div3").hide();
+				$("#div6").show();
+			});
+			$("#bu4").click(function() {
+				$("#div3").hide();
+				$("#div4").show();
+			});
+			$("#bu5").click(function() {
+				$("#div4").hide();
+				$("#div5").show();
+			});
+			$("#bu6").click(function() {
+				$("#div4").hide();
+				$("#div7").show();
+			});
+
+		});
+
+	</script>
+
+
+</head>
+<body style="width: 1000px; margin: 0 auto;">
+	
+
+	<div style="text-align:center; margin-top:20px;">
+		<button id="back">Zur&uuml;ck an den Start</button>
+	</div>	
+
+	<div id="div1">
+		<h3 id="one">Du weisst, dass gleich ein Zug kommen wird. Du siehst jedoch auf dem Gleis einen Menschen liegen. Was tust du?</h3>
+		<img id="b1" src="Basisbild.bmp" style="margin-top:40px;">
+		<button id="bu1" style="margin: 30px;">du l&auml;ufst weg</button>
+		<button id="bu2" style="margin: 30px;">du m&ouml;chtest dem Menschen helfen</button>
+	</div>	
+	<div id="div2">
+		<h3 id="two">Pl&ouml;tzlich kommt ein Mann und schiesst dich mit einer Pistole ab.</h3>
+		<img id="b2" src="Basisbild.bmp" style="margin-top:40px;">
+	</div>
+	<div id="div3">
+		<h3 id="three">Wie gehst du vor?</h3>
+		<img id="b6" src="Basisbild.bmp" style="margin-top:40px;">
+		<button id="bu3" style="margin: 30px;">du versuchst den Menschen selber zu retten</button>
+		<button id="bu4" style="margin: 30px;">du rufst die Polizei</button>
+	</div>
+	<div id="div4">
+		<h3 id="four">Die Polizei sagt, dass sie erst in 15 Minuten eintreffen wird. Leider kommt der Zug schon in 10 Minuten. Was machst du?</h3>
+		<img id="b3" src="Basisbild.bmp" style="margin-top:40px;">
+		<button id="bu6" style="margin: 30px;">du versuchst den Menschen selber zu retten</button>
+		<button id="bu5" style="margin: 30px;">du wartest bis die Polizei kommt</button>
+	</div>
+	<div id="div5">
+		<h3 id="five">Der Zug hat den Menschen leider erfasst. Die Polizei kam zu sp&auml;t.</h3>
+		<img id="b4" src="Basisbild.bmp" style="margin-top:40px;">
+	</div>
+	<div id="div6">
+		<h3 id="six">Du merkst, dass der Mensch ohnm&auml;chtig ist. Mit aller Kraft ziehst du ihn in letzter Sekunde auf sicheren Boden. Der Mensch wird dir f&uuml;r immer dankbar sein.</h3>
+		<img id="b5" src="Basisbild.bmp" style="margin-top:40px;">
+	</div>	
+	<div id="div7">
+		<h3 id="six">Du merkst, dass der Mensch ohnm&auml;chtig ist. Mit aller Kraft ziehst du ihn in letzter Sekunde auf sicheren Boden. Der Mensch wird dir f&uuml;r immer dankbar sein.</h3>
+		<img id="b5" src="Basisbild.bmp" style="margin-top:40px;">
+	</div>	
+
+</body>
+</html>
