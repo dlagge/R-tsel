@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Story</title>
-<!--1.Release, ohne Timer-->
+	<title>Spiel</title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
 
@@ -105,88 +105,119 @@
 		});
 
 	</script>
+	<style>
+	body {
+		background: #1b1a2a;
+		margin: 0 auto;
+		width: 800px;
+	}
+	h1, h2, h3 {
+		font-family: Helvetica;
+		color: #c1c1bf;
+		font-size: 23px;
+	}
+	.knopf {
+		background: #394a5a;
+		margin: 30px;
+		font-family: Helvetica;
+		color: #c1c1bf;
+		font-size: 18px;
+		border-radius: 10px;
+		border-style: none;
+		width: 360px;
+		height: 90px;
+	}
+	#bu1, #bu3, #bu5, #bu7, #bu9, #bu11, #bu13, #bu15 { 
+		margin-left: 0px;
+		margin-bottom: -124px;
+		
+	}
+	#bu2, #bu4, #bu6, #bu8, #bu10, #bu12, #bu14,#bu16 { 
+		margin-left: 440px;
+	}
+
+	</style>
 
 
 </head>
 
-<body style="width: 1000px; margin: 0 auto;">
+<body>
 	
-	<div style="text-align:center; margin-top:20px;">
-		<button id="back">Zur&uuml;ck an den Start</button>
-	</div>	
+	
 
 	<div id="div1">
 		<h3>Mitten in der Nacht wirst du von einem Poltern aus dem Schlaf gerissen.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu1" style="margin: 30px;">Ich bleibe liegen.</button>
-		<button id="bu2" style="margin: 30px;">Ich stehe auf und gehe ins Badezimmer.</button>
+		<button class="knopf" id="bu1">Ich bleibe liegen.</button>
+		<button class="knopf" id="bu2">Ich stehe auf und gehe ins Badezimmer.</button>
 	</div>	
 	<div id="div2">
 		<h3>Du bist wieder eingeschlafen und wirst dann vom Einbrecher eiskalt ermordet.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
 	</div>
 	<div id="div3">
 		<h3>Du h&ouml;rst ein Ger&auml;usch aus dem Wohnzimmer. Dir wird schlagartig klar, dass dort ein Einbrecher am Werk sein muss.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu3" style="margin: 30px;">Ich verstecke mich hinter dem Duschvorhang.</button>
-		<button id="bu4" style="margin: 30px;">Ich gehe meine Schwester wecken.</button>
+		<img src="Vorbild.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu3">Ich verstecke mich hinter dem Duschvorhang.</button>
+		<button class="knopf" id="bu4">Ich gehe meine Schwester wecken.</button>
 	</div>
 	<div id="div4">
 		<h3>Du h&ouml;rst Schritte, welche immer lauter werden.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu5" style="margin: 30px;">Ich bleibe in meinem Versteck.</button>
-		<button id="bu6" style="margin: 30px;">Ich ergreife die Flucht, indem ich aus dem Fenster im Obergeschoss springe.</button>
+		<img src="WCDEFINITIV.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu5">Ich bleibe in meinem Versteck.</button>
+		<button class="knopf" id="bu6">Ich ergreife die Flucht, indem ich aus dem Fenster im Obergeschoss springe.</button>
 	</div>
 	<div id="div5">
 		<h3 >Du weckst deine Schwester. Sie r&auml;t dir, sofort die Polizei zu rufen.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu7" style="margin: 30px;">Ich folge der Anweisung meiner Schwester, und wie verst&auml;ndigen gemeinsam die Polizei.</button>
-		<button id="bu8" style="margin: 30px;">Ich schicke meine Schwester alleine in den unteren Stock, damit sie im Wohnzimmer nachschaut, was los ist.</button>
+		<img src="AussenraumDEFINITIV.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu7">Ich folge der Anweisung meiner Schwester, und wie verst&auml;ndigen gemeinsam die Polizei.</button>
+		<button class="knopf" id="bu8">Ich schicke meine Schwester alleine in den unteren Stock, damit sie im Wohnzimmer nachschaut, was los ist.</button>
 	</div>
 	<div id="div6">
 		<h3>Der Einbrecher hat dich in deinem Versteck gefunden und dich ohne zu z&ouml;gern umgebracht.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
 	</div>	
 	<div id="div7">
 		<h3>Da du mit einem lauten Knall auf dem Vorplatz aufgeschlagen bist, ist dein Nachbar auf dich aufmerksam geworden. Er ruft sofort die Ambulanz, und du wirst mit schweren Verletzungen ins Krankenhaus eingeliefert.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
+		<img src="AussenraumDEFINITIV.jpg" style="margin-top:40px;">
 	</div>	
 	<div id="div8">
 		<h3>Ihr habt die Polizei angerufen und eure Adresse angegeben. Bevor ihr aber noch fragen k&ouml;nnt, wie ihr euch nun verhalten sollt, ist die Leitung unterbrochen. Ihr seid wieder auf euch alleine gestellt.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu9" style="margin: 30px;">Wir gehen zusammen ins Bad und verstecken uns.</button>
-		<button id="bu10" style="margin: 30px;">Wir schleichen uns gemeinsam ins Erdgeschoss hinunter, um den Einbrecher zu stellen.</button>
+		<img src="Vorbild.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu9">Wir gehen zusammen ins Bad und verstecken uns.</button>
+		<button class="knopf" id="bu10">Wir schleichen uns gemeinsam ins Erdgeschoss hinunter, um den Einbrecher zu stellen.</button>
 	</div>
 	<div id="div9">
 		<h3>Du h&ouml;rst laute Schreie deiner Schwester aus dem Wohnzimmer.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu11" style="margin: 30px;">Ich renne ins Wohnzimmer hinunter, um meiner Schwester zu helfen.</button>
-		<button id="bu12" style="margin: 30px;">Starr vor Schreck bleibe ich in meinem Versteck und mache mich so klein wie m&ouml;glich.</button>
+		<img src="Vorbild.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu11">Ich renne ins Wohnzimmer hinunter, um meiner Schwester zu helfen.</button>
+		<button class="knopf" id="bu12">Starr vor Schreck bleibe ich in meinem Versteck und mache mich so klein wie m&ouml;glich.</button>
 	</div>
 	<div id="div10">
 		<h3>Hinter dem Schuhm&ouml;bel im Gang versteckt, erblickt ihr eine grosse, schwarz gekleidete Gestalt mit einer Maske in eurem Wohnzimmer.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu13" style="margin: 30px;">Ich schleiche mich in die K&uuml;che und packe das gr&ouml;sste K&uuml;chenmesser. Damit will ich dem Einbrecher gegen&uuml;bertreten und ihn einsch&uuml;chtern.</button>
-		<button id="bu14" style="margin: 30px;">Mit Handzeichen einigen sich meine Schwester und ich, doch lieber auf die Polizei zu warten.</button>
+		<img src="Vorbild.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu13">Ich schleiche mich in die K&uuml;che und packe das gr&ouml;sste K&uuml;chenmesser. Damit will ich dem Einbrecher gegen&uuml;bertreten und ihn einsch&uuml;chtern.</button>
+		<button class="knopf" id="bu14">Mit Handzeichen einigen sich meine Schwester und ich, doch lieber auf die Polizei zu warten.</button>
 	</div>
 	<div id="div11">
 		<h3>Du siehst, wie der Dieb durch das Fenster fl&uuml;chtet.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
-		<button id="bu15" style="margin: 30px;">Ich suche meine Schwester und rufe gleichzeitig die Polizei.</button>
-		<button id="bu16" style="margin: 30px;">Ich verfolge den Einbrecher und versuche ihn zu &uuml;berw&auml;ltigen.</button>
+		<img src="Vorbild.jpg" style="margin-top:40px;">
+		<button class="knopf" id="bu15">Ich suche meine Schwester und rufe gleichzeitig die Polizei.</button>
+		<button class="knopf" id="bu16">Ich verfolge den Einbrecher und versuche ihn zu &uuml;berw&auml;ltigen.</button>
 	</div>
 	<div id="div12">
 		<h3>Leider hat dich der Einbrecher in eine Falle gelockt und ermordet.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
+		<img src="Vorbild.jpg" style="margin-top:40px;">
 	</div>
 	<div id="div13">
 		<h3>Der Dieb ist vor euren Augen geflohen und hat einige Wertsachen mitgehen lassen.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
+		<img src="Vorbild.jpg" style="margin-top:40px;">
 	</div>
 	<div id="div14">
 		<h3>Nach bangem Warten ist die Polizei eingetroffen. Deine Schwester hast du verletzt hinter dem Sofa gefunden. Der Notarzt gibt sp&auml;ter Entwarnung, ihre Wunden sind nicht lebensgef&auml;hrich.</h3>
-		<img src="Basisbild.bmp" style="margin-top:40px;">
+		<img src="Vorbild.jpg" style="margin-top:40px;">
 	</div>
+	
+	<div style="text-align:center; margin-top:20px;">
+		<button class="knopf" id="back">Zur&uuml;ck an den Start</button>
+	</div>	
 
 </body>
 </html>
