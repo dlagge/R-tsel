@@ -109,9 +109,9 @@
 	body {
 		background: #1b1a2a;
 		margin: 0 auto;
-		max-width: 800px;
+		max-width:800px
 	}
-	h1, h2, h3 {
+	h3 {
 		font-family: Helvetica;
 		color: #c1c1bf;
 		font-size: 20px;
@@ -128,50 +128,72 @@
 		width: 350px;
 		height: 120px;
 	}
-	#bu1, #bu3, #bu5, #bu7, #bu9, #bu11, #bu13, #bu15 { 
-		margin-left: 0px;
-		margin-bottom: -154px;
-	}
-	#bu2, #bu4, #bu6, #bu8, #bu10, #bu12, #bu14,#bu16 { 
-		margin-left: 450px;
-	}
+	
 	img {
 		margin-top:40px;
+		margin-bottom:15px;
 	}
 
-	@media only screen and (max-width:800p) {
+	table {
+		margin-left: -52px;
+		
+	}
+
+	td {
+		padding: 19px;
+	
+	}
+
+	@media only screen 
+	and (max-width:800px) {
 
 		body {
 			padding: 50px;
 		}
+
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
 		img {
 			max-width: 100%;
-  			height: auto;
-		}
-		.divs {
-			text-align: center;
+			height: auto;
 		}
 
+		table {
+			text-align: center;
+			margin-left: 0px;
+		}
+	
+	}
+	
+	@media only screen 
+	and (max-device-width:1125px) {
+
+		body {
+			padding: 50px;
+		}
+
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		table {
+			text-align: center;
+			margin-left: 0px;
+		}
+	
 		.knopf {
-			float: center;
-			margin: 0px;
-		}
-		#bu1, #bu3, #bu5, #bu7, #bu9, #bu11, #bu13, #bu15 { 
-			margin-left: auto;
-			
-		}
-		#bu2, #bu4, #bu6, #bu8, #bu10, #bu12, #bu14,#bu16 { 
-			margin-top: 200px;
-			margin-left: auto;
-			
-		}
-		h3 {
-			text-align: left;
+			transform: scale(1.3);
 		}
 	}
 
 		
-	
 	</style>
 
 
@@ -183,29 +205,45 @@
 
 	<div class="divs" id="div1">
 		<h3>Mitten in der Nacht wirst du von einem Poltern aus dem Schlaf gerissen.</h3>
-		<button class="knopf" id="bu1">Ich bleibe liegen.</button>
-		<button class="knopf" id="bu2">Ich stehe auf und gehe ins Badezimmer.</button>
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu1">Ich bleibe liegen.</button></td>
+		<td><button class="knopf" id="bu2">Ich stehe auf und gehe ins Badezimmer.</button></td>
+		</tr>
+		</table>
 	</div>	
 	<div class="divs" id="div2">
 		<h3>Du bist wieder eingeschlafen und wirst dann vom Einbrecher eiskalt ermordet.</h3>
 	</div>
 	<div class="divs" id="div3">
 		<h3>Du h&ouml;rst ein Ger&auml;usch aus dem Wohnzimmer. Dir wird schlagartig klar, dass dort ein Einbrecher am Werk sein muss.</h3>
-		<img src="WCDEFINITIV.jpg">
-		<button class="knopf" id="bu3">Ich verstecke mich hinter dem Duschvorhang.</button>
-		<button class="knopf" id="bu4">Ich gehe meine Schwester wecken.</button>
+		<img src="Vorbild.jpg">
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu3">Ich verstecke mich hinter dem Duschvorhang.</button></td>
+		<td><button class="knopf" id="bu4">Ich gehe meine Schwester wecken.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div4">
 		<h3>Du h&ouml;rst Schritte, welche immer lauter werden.</h3>
 		<img src="WCDEFINITIV.jpg">
-		<button class="knopf" id="bu5">Ich bleibe in meinem Versteck.</button>
-		<button class="knopf" id="bu6">Ich ergreife die Flucht, indem ich aus dem Fenster im Obergeschoss springe.</button>
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu5">Ich bleibe in meinem Versteck.</button></td>
+		<td><button class="knopf" id="bu6">Ich ergreife die Flucht, indem ich aus dem Fenster im Obergeschoss springe.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div5">
 		<h3 >Du weckst deine Schwester. Sie r&auml;t dir, sofort die Polizei zu rufen.</h3>
-		<img src="Schwester wecken_DEF.jpg">
-		<button class="knopf" id="bu7">Ich folge der Anweisung meiner Schwester, und wie verst&auml;ndigen gemeinsam die Polizei.</button>
-		<button class="knopf" id="bu8">Ich schicke meine Schwester alleine in den unteren Stock, damit sie im Wohnzimmer nachschaut, was los ist.</button>
+		<img src="AussenraumDEFINITIV.jpg">
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu7">Ich folge der Anweisung meiner Schwester, und wie verst&auml;ndigen gemeinsam die Polizei.</button></td>
+		<td><button class="knopf" id="bu8">Ich schicke meine Schwester alleine in den unteren Stock, damit sie im Wohnzimmer nachschaut, was los ist.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div6">
 		<h3>Der Einbrecher hat dich in deinem Versteck gefunden und dich ohne zu z&ouml;gern umgebracht.</h3>
@@ -216,31 +254,47 @@
 	</div>	
 	<div class="divs" id="div8">
 		<h3>Ihr habt die Polizei angerufen und eure Adresse angegeben. Bevor ihr aber noch fragen k&ouml;nnt, wie ihr euch nun verhalten sollt, ist die Leitung unterbrochen. Ihr seid wieder auf euch alleine gestellt.</h3>
-		<img src="Schwester wecken_DEF.jpg">
-		<button class="knopf" id="bu9">Wir gehen zusammen ins Bad und verstecken uns.</button>
-		<button class="knopf" id="bu10">Wir schleichen uns gemeinsam ins Erdgeschoss hinunter, um den Einbrecher zu stellen.</button>
+		<img src="Vorbild.jpg">
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu9">Wir gehen zusammen ins Bad und verstecken uns.</button></td>
+		<td><button class="knopf" id="bu10">Wir schleichen uns gemeinsam ins Erdgeschoss hinunter, um den Einbrecher zu stellen.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div9">
 		<h3>Du h&ouml;rst laute Schreie deiner Schwester aus dem Wohnzimmer.</h3>
 		<img class="img" src="Vorbild.jpg">
-		<button class="knopf" id="bu11">Ich renne ins Wohnzimmer hinunter, um meiner Schwester zu helfen.</button>
-		<button class="knopf" id="bu12">Starr vor Schreck bleibe ich in meinem Versteck und mache mich so klein wie m&ouml;glich.</button>
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu11">Ich renne ins Wohnzimmer hinunter, um meiner Schwester zu helfen.</button></td>
+		<td><button class="knopf" id="bu12">Starr vor Schreck bleibe ich in meinem Versteck und mache mich so klein wie m&ouml;glich.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div10">
 		<h3>Hinter dem Schuhm&ouml;bel im Gang versteckt, erblickt ihr eine grosse, schwarz gekleidete Gestalt mit einer Maske in eurem Wohnzimmer.</h3>
 		<img class="img" src="Vorbild.jpg">
-		<button class="knopf" id="bu13">Ich schleiche mich in die K&uuml;che und packe das gr&ouml;sste K&uuml;chenmesser. Damit will ich dem Einbrecher gegen&uuml;bertreten und ihn einsch&uuml;chtern.</button>
-		<button class="knopf" id="bu14">Mit Handzeichen einigen sich meine Schwester und ich, doch lieber auf die Polizei zu warten.</button>
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu13">Ich schleiche mich in die K&uuml;che und packe das gr&ouml;sste K&uuml;chenmesser. Damit will ich dem Einbrecher gegen&uuml;bertreten und ihn einsch&uuml;chtern.</button></td>
+		<td><button class="knopf" id="bu14">Mit Handzeichen einigen sich meine Schwester und ich, doch lieber auf die Polizei zu warten.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div class="divs" id="div11">
 		<h3>Du siehst, wie der Dieb durch das Fenster fl&uuml;chtet.</h3>
 		<img src="Vorbild.jpg">
-		<button class="knopf" id="bu15">Ich suche meine Schwester und rufe gleichzeitig die Polizei.</button>
-		<button class="knopf" id="bu16">Ich verfolge den Einbrecher und versuche ihn zu &uuml;berw&auml;ltigen.</button>
+		<table>
+		<tr>
+		<td><button class="knopf" id="bu15">Ich suche meine Schwester und rufe gleichzeitig die Polizei.</button></td>
+		<td><button class="knopf" id="bu16">Ich verfolge den Einbrecher und versuche ihn zu &uuml;berw&auml;ltigen.</button></td>
+		</tr>
+		</table>
 	</div>
 	<div id="div12">
 		<h3>Leider hat dich der Einbrecher in eine Falle gelockt und ermordet.</h3>
-		<img src="Schwester wecken_DEF.jpg">
+		<img src="Vorbild.jpg">
 	</div>
 	<div class="divs" id="div13">
 		<h3>Der Dieb ist vor euren Augen geflohen und hat einige Wertsachen mitgehen lassen.</h3>
