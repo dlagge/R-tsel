@@ -15,16 +15,66 @@
 	.bild {
 		margin-top: 40px;
 	}
+
+	h3 {
+		font-family: Helvetica;
+		color: #c1c1bf;
+		font-size: 20px;
+	}
+
+	.zur {
+		background: #394a5a;
+		padding: 25px;
+		margin: 30px;
+		font-family: Helvetica;
+		color: #c1c1bf;
+		font-size: 16px;
+		border-style: none;
+		border-radius: 10px;
+		width: 350px;
+		height: 120px;
+	}
+
+	@media only screen 
+	and (max-width:1125px) {
+		.zur {
+			margin-left: 30px;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		body {
+			margin-right: 70px;
+			margin-left: 70px;
+		}
+	}
+
+	@media only screen 
+	and (max-device-width:1125px) {
+		.zur {
+			transform: scale(1.3);
+		}
+	}
+
 </style>
 
 </head>
 
 
 <body>
+<center><button class="zur" OnClick="location.href='index.html'">Zur&uuml;ck an den Start</button></center>
 <img class="bild" src="Vorbild.jpg">
+<h3>Bild 1: Bad<h3>
 <img class="bild" src="Vorbild.jpg">
+<h3>Bild 2: Schwester wecken<h3>
 <img class="bild" src="Vorbild.jpg">
+<h3>Bild 3: Aussenraum<h3>
 <img class="bild" src="Vorbild.jpg">
+<h3>Bild 4: Dieb<h3>
 <img class="bild" src="Vorbild.jpg">
+<h3>Bild 5: Polizei<h3>
 </body>
 <html>
