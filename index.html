@@ -2,9 +2,135 @@
 <html>
 <head>
 	<title>Startseite</title>
+
+<style>
+	body {
+		background: #1b1a2a;
+		margin: 0 auto;
+		max-width: 1100px;
+		margin-top: 55px;
+	}
+
+	#titel2 {
+		float: right;
+		margin-right: 35px;
+		line-height: 80%;
+	}
+
+	#schrank {
+		margin-bottom: -550px;
+		background-color: #1b1a2a;	
+	}
+	
+	.knopf {
+		margin-left: 35px;
+		margin-top: 15px;
+	}
+
+	h1 {
+		font-family: Helvetica;
+		font-weight: bold;
+		color: #c1c1bf;
+		font-size: 40px;
+		margin-bottom: -80px;
+		margin-left: 50px;
+	}
+
+	h2 {
+		font-family: Helvetica;
+		font-weight: normal;
+		color: #c1c1bf;
+		font-size: 20px;
+		padding: 50px;
+		margin-top: 95px;
+		background: #17364b;
+	}
+
+	h3 {
+		font-family: Helvetica;
+		font-weight: lighter;
+		color: #c1c1bf;
+		font-size: 20px;
+	}
+
+
+	@media only screen 
+	and (max-width:1125px) {
+
+		body {
+			margin-right: 70px;
+		}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}		
+
+		#schrank {
+			visibility: hidden;
+		}
+
+		#titel2 {
+			float: left;
+			margin-left: 40px;
+			margin-top: 100px;
+		}
+		
+		h1 {
+			margin-left: 40px;
+		}
+
+		h2 {
+			
+			margin-top: 15px;
+			margin-left: 35px;
+			margin-right: -35px;
+			
+		}
+	
+	}
+
+</style>
+<script>
+
+
+</script>
+
+
 </head>
 <body>
-	<h1>Herzlich Willkommen</h1>
-	<button OnClick="location.href='Raetsel.html'">Start Spiel</button>
+	<h1>Entscheide dich!</h1>
+	<div id="titel2">
+		<h3>bildnerische Arbeit</h3>
+		<h3>Philippe Lagger</h3>
+	</div>
+	<img id="schrank" src="Schrank.jpg">
+	<img class="knopf" src="Anleitungknopf.jpg" OnClick="location.href='#anleitung'"">
+	<img class="knopf" src="Startknopf.jpg" OnClick="location.href='Raetsel.html'">
+	<img class="knopf" src="AlleBilderAnsehenKnopf.jpg" OnClick="location.href='bilder.html'">
+	<h2 id="anleitung">
+	B&uuml;cher lesen kann manchmal in dem Sinne frustrierend sein, dass einem nichts anderes &uuml;brig bleibt,
+	als den Ablauf und das Ende der Geschichte so zu akzeptieren, wie es der Autor vorgesehen hat. In
+	dieser Geschichte ist dies nicht so, denn hier entscheidet der Benutzer, wie er in einer bestimmten
+	Situation reagieren w&uuml;rde. Im Verlauf der Story kommt man immer wieder an einen Punkt, wo man
+	ausw&auml;hlen kann, wie es weitergehen soll. Also kreiert man sich seinen eigenen und individuellen
+	Krimi.<br>
+	Bevor man eine Entscheidung trifft, muss man jeweils den Text am Anfang der Seite lesen und
+	anschliessend die beiden M&ouml;glichkeiten unten am Bild studieren und erst dann eine Auswahl treffen.
+	Es ist m&ouml;glich, dass die gestalteten Bilder zu zwei verschiedenen Textsituationen erscheinen. Also
+	immer aufmerksam die Texte studieren! Auf Wunsch kann die Geschichte wieder von neuem
+	gestartet werden, um eine weitere Variante auszuprobieren.
+	</h2>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
