@@ -42,7 +42,18 @@
 		padding: 50px;
 		padding-right: 600px;
 		margin-top: 95px;
+
+	}
+
+	#anleitung {
 		background: #17364b;
+
+	
+	}
+	
+	#titelanleitung {
+		font-size: 30px;
+		margin-bottom: -150px;
 	}
 
 	h3 {
@@ -93,14 +104,24 @@
 		h2 {
 			
 			margin-top: 15px;
-			margin-left: 35px;
-			margin-right: -35px;
+			
+			margin-right: 35px;
 			padding-right: 35px;		
 		}
 	
 		.zur {
 			margin-left: 100px;
 		}
+
+		#titelanleitung {
+			margin-bottom: -70px;
+		}
+
+		#anleitung {
+			margin-left: 35px;
+			margin-right: -35px;
+		}
+
 	}
 
 	@media only screen 
@@ -111,10 +132,7 @@
 	}
 
 </style>
-<script>
 
-
-</script>
 
 
 </head>
@@ -128,8 +146,9 @@
 	<img class="knopf" src="Anleitungknopf.jpg" OnClick="location.href='#anleitung'"">
 	<img class="knopf" src="Startknopf.jpg" OnClick="location.href='Raetsel.html'">
 	<img class="knopf" src="AlleBilderAnsehenKnopf.jpg" OnClick="location.href='bilder.html'">
-	<h2 id="anleitung">
-	<br>Anleitung<br><br><br>
+	<div  id="anleitung">
+	<h2 id="titelanleitung">Anleitung</h2>
+	<h2>
 	B&uuml;cher lesen kann manchmal in dem Sinne frustrierend sein, dass einem nichts anderes &uuml;brig bleibt,
 	als den Ablauf und das Ende der Geschichte so zu akzeptieren, wie es der Autor vorgesehen hat. In
 	dieser Geschichte ist dies nicht so, denn hier entscheidet der Benutzer, wie er in einer bestimmten
@@ -142,6 +161,7 @@
 	immer aufmerksam die Texte studieren! Auf Wunsch kann die Geschichte wieder von neuem
 	gestartet werden, um eine weitere Variante auszuprobieren.
 	</h2>
+	</div>
 	<center><button class="zur" OnClick="location.href='#titel1'">Zur&uuml;ck zum Seitenanfang</button><center>
 </body>
 </html>
